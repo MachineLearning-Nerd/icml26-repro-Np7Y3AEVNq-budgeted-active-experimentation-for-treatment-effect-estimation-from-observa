@@ -1,0 +1,29 @@
+{
+  "contract": "Algorithm 1 implements the OBS+pool budgeted active-experimentation procedure whose acquisition (Eq. 7) S(u)=alpha*eta(v_u)+beta*eta(d_u)+gamma*eta(o_u) balances epistemic uncertainty (v_u=Var of ensemble), domain discrepancy (d_u=sigmoid(g_xi)), and overlap deficit (o_u=2|e_obs-0.5|), rank-normalized.",
+  "structural_match_eq7": true,
+  "component_responsive": true,
+  "overlap_corr_o_vs_abs": 1.0,
+  "domain_corr_d_vs_dist": 0.513,
+  "end_to_end_finite_estimate": true,
+  "theta_hat": [
+    0.189,
+    -0.138,
+    -0.044,
+    0.061,
+    -0.031,
+    -0.149
+  ],
+  "queried_high_overlap_deficit_frac": 0.498,
+  "random_baseline_frac": 0.25,
+  "ablation_active_targets_overlap": true,
+  "B": 480,
+  "seed": 0,
+  "verdict": "VERIFIED",
+  "control": "Negative/ablation: single-component cold-start uncertainty sampling wastes budget (paper's ablation); random selection hits the high-overlap quartile only ~25% of the time vs active's 50%.",
+  "notes": "CATE ensemble uses sklearn MLP (Deep-Ensembles style) for v_u; the paper cites MC-Dropout as the computationally cheaper alternative -- both estimate the same epistemic variance. Continuous-covariate industrial-style DGP.",
+  "runtime_s": 41.5,
+  "config": {
+    "seed": 0,
+    "claim1_B": 480
+  }
+}

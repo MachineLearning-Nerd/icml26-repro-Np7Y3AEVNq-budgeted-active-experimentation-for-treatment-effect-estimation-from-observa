@@ -1,0 +1,71 @@
+{
+  "contract": "Section 5: on ride-hailing (Didi) data, the budgeted active experimentation framework reduces RCT labeling cost by ~80% vs random sampling at comparable estimation performance (DRCFR @100k active ~ random @500k).",
+  "data_available": false,
+  "blocker": "The ride-hailing dataset is proprietary Didi Chuxing order-level data (468 features, OOT protocol, ~4.5M biased OBS logs). It is not public and is not redistributable; the campaign has no access to it. The exact claim (an 80%% cost reduction ON THIS DATASET) therefore cannot be verified or falsified without the data.",
+  "verdict": "BLOCKED",
+  "corroboration": [
+    {
+      "B": 1000,
+      "kind": "active",
+      "auuc_mean": 0.14481717281612824,
+      "auuc_std": 0.020403371603281636
+    },
+    {
+      "B": 1000,
+      "kind": "random",
+      "auuc_mean": 0.04650553151238784,
+      "auuc_std": 0.012643856507231344
+    },
+    {
+      "B": 2000,
+      "kind": "active",
+      "auuc_mean": 0.12108672208798395,
+      "auuc_std": 0.012711529230422363
+    },
+    {
+      "B": 2000,
+      "kind": "random",
+      "auuc_mean": 0.08071677559396158,
+      "auuc_std": 0.023032852314838183
+    },
+    {
+      "B": 4000,
+      "kind": "active",
+      "auuc_mean": 0.11146320084876064,
+      "auuc_std": 0.013887106104059403
+    },
+    {
+      "B": 4000,
+      "kind": "random",
+      "auuc_mean": 0.07206468313453628,
+      "auuc_std": 0.008285155761406059
+    },
+    {
+      "B": 8000,
+      "kind": "active",
+      "auuc_mean": 0.09381359848324015,
+      "auuc_std": 0.01644350628691661
+    },
+    {
+      "B": 8000,
+      "kind": "random",
+      "auuc_mean": 0.06876212782595138,
+      "auuc_std": 0.008743675665681593
+    }
+  ],
+  "active_smallB_auuc": 0.1448,
+  "interpretation": "On this ride-hailing-LIKE semi-synthetic simulator, active sampling reaches a given AUUC with fewer RCT labels than random (mechanism corroborated). This is NOT a verification of the 80%% figure on the actual Didi dataset.",
+  "control": "Random sampling is the explicit baseline the claim compares against; shown alongside active at every budget.",
+  "notes": "BLOCKED is the honest verdict: proprietary data unavailable. Semi-synthetic result demonstrates the MECHANISM only.",
+  "runtime_s": 40.0,
+  "config": {
+    "seed": 0,
+    "claim6_Bs": [
+      1000,
+      2000,
+      4000,
+      8000
+    ],
+    "claim6_seeds": 3
+  }
+}

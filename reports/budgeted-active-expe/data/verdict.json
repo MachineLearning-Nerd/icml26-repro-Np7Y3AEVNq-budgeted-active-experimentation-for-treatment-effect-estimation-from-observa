@@ -1,0 +1,32 @@
+{
+  "project": "icml26-repro-Np7Y3AEVNq",
+  "paper": "arXiv 2602.22021",
+  "total_runtime_s": 151.6,
+  "config": "full",
+  "claims": {
+    "claim1_algorithm1": {
+      "verdict": "VERIFIED",
+      "runtime_s": 41.5
+    },
+    "claim2_unbiased": {
+      "verdict": "VERIFIED",
+      "runtime_s": 5.0
+    },
+    "claim3_concentration": {
+      "verdict": "VERIFIED",
+      "runtime_s": 5.9
+    },
+    "claim4_normality": {
+      "verdict": "VERIFIED",
+      "runtime_s": 43.8
+    },
+    "claim5_minimax": {
+      "verdict": "VERIFIED",
+      "runtime_s": 15.3
+    },
+    "claim6_ridehailing": {
+      "verdict": "BLOCKED",
+      "runtime_s": 40.0
+    }
+  }
+}
