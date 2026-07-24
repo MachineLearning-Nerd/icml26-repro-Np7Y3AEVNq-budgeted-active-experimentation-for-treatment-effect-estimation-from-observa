@@ -1,32 +1,41 @@
 {
   "project": "icml26-repro-Np7Y3AEVNq",
   "paper": "arXiv 2602.22021",
-  "total_runtime_s": 151.6,
+  "total_runtime_s": 31.5,
   "config": "full",
   "claims": {
     "claim1_algorithm1": {
       "verdict": "VERIFIED",
-      "runtime_s": 41.5
+      "runtime_s": 11.7,
+      "run_id": "c7cd5e5b"
     },
     "claim2_unbiased": {
       "verdict": "VERIFIED",
-      "runtime_s": 5.0
+      "runtime_s": 1.1,
+      "run_id": "c7cd5e5b"
     },
     "claim3_concentration": {
       "verdict": "VERIFIED",
-      "runtime_s": 5.9
+      "runtime_s": 1.1,
+      "run_id": "c7cd5e5b"
     },
     "claim4_normality": {
       "verdict": "VERIFIED",
-      "runtime_s": 43.8
+      "runtime_s": 8.4,
+      "run_id": "c7cd5e5b"
     },
     "claim5_minimax": {
       "verdict": "VERIFIED",
-      "runtime_s": 15.3
+      "runtime_s": 4.0,
+      "run_id": "c7cd5e5b"
     },
     "claim6_ridehailing": {
       "verdict": "BLOCKED",
-      "runtime_s": 40.0
+      "runtime_s": 5.5,
+      "run_id": "c7cd5e5b"
     }
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only), image python:3.12",
+  "note": "Metrics identical to the local deterministic regeneration (same seeds, commit e272487); runtimes below are from the canonical HF run c7cd5e5b."
 }

@@ -26,11 +26,13 @@
   "verdict": "VERIFIED",
   "control": "Negative control: when randomization is VIOLATED (T correlated with Y(1) potential), the pseudo-outcome becomes biased (grand bias 0.0666), confirming randomization -- not selection -- is what protects unbiasedness.",
   "notes": "Adaptive policy selects the LEAST-sampled segment each round (depends on past selections -> F_{t-1}-measurable). This is the condition Lemma 4.4 addresses and the prior toy repro omitted (it used i.i.d. Bern(0.5) X).",
-  "runtime_s": 5.0,
+  "runtime_s": 1.1,
   "config": {
     "seed": 0,
     "claim2_trials": 1000,
     "claim2_B": 240,
     "claim2_d": 5
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only)"
 }

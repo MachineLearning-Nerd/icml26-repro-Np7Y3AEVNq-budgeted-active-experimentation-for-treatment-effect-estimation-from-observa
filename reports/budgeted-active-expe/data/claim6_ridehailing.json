@@ -57,7 +57,7 @@
   "interpretation": "On this ride-hailing-LIKE semi-synthetic simulator, active sampling reaches a given AUUC with fewer RCT labels than random (mechanism corroborated). This is NOT a verification of the 80%% figure on the actual Didi dataset.",
   "control": "Random sampling is the explicit baseline the claim compares against; shown alongside active at every budget.",
   "notes": "BLOCKED is the honest verdict: proprietary data unavailable. Semi-synthetic result demonstrates the MECHANISM only.",
-  "runtime_s": 40.0,
+  "runtime_s": 5.5,
   "config": {
     "seed": 0,
     "claim6_Bs": [
@@ -67,5 +67,7 @@
       8000
     ],
     "claim6_seeds": 3
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only)"
 }

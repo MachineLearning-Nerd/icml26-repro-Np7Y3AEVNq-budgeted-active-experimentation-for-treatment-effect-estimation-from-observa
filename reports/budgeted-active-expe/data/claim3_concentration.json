@@ -36,7 +36,7 @@
   "verdict": "VERIFIED",
   "control": "Adversarial adaptivity (always query segment 0): the self-normalized pointwise interval (Eq 11) covers the unqueried segments' true theta 1.000 of the time (>= target 0.900), while a NAIVE i.i.d. interval (+/-z*sigma/sqrt(B/d), ignoring leverage) covers only 0.000 -- proving self-normalization with the realized V is essential under adaptivity.",
   "notes": "sigma set to the worst-case 2*Lp for the rigorous coverage check (loose but valid); a calibrated empirical sigma gives a tightness ratio 2.8x. The calibration sweep shows coverage tracks 1-delta.",
-  "runtime_s": 5.9,
+  "runtime_s": 1.1,
   "config": {
     "seed": 0,
     "claim3_trials": 800,
@@ -44,5 +44,7 @@
     "claim3_d": 4,
     "claim3_delta": 0.1,
     "claim3_lam": 1.0
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only)"
 }

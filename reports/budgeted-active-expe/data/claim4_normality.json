@@ -69,11 +69,13 @@
   "verdict": "VERIFIED",
   "control": "Convergence control: covariance relerr vs the analytic target shrinks across the B-sweep [12, 175, 700] (relerr [0.01, 0.03, 0.02]). No Jarque-Bera p-value gate is used (at the large trial counts needed to estimate a covariance, JB is overpowered); the covariance MATCH to d*diag(2-theta^2) is the CLT's quantitative prediction, and a robust +-1.96sigma coverage test (insensitive to rare 5-sigma MC outliers) checks the shape.",
   "notes": "Primary evidence: empirical covariance of sqrt(B)(th_hat-th*) matches the analytic asymptotic covariance d*diag(2-theta^2) within relerr 0.019, and +-1.96sigma coverage [0.95, 0.943] ~= 0.95. Raw excess kurtosis [-0.152, 0.396] is reported but not gated on (a single 5-sigma MC outlier among 3000 trials inflates it without contradicting the CLT).",
-  "runtime_s": 43.8,
+  "runtime_s": 8.4,
   "config": {
     "seed": 0,
     "claim4_trials": 3000,
     "claim4_B": 700,
     "claim4_d": 2
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only)"
 }

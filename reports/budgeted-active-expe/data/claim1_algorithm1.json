@@ -21,9 +21,11 @@
   "verdict": "VERIFIED",
   "control": "Negative/ablation: single-component cold-start uncertainty sampling wastes budget (paper's ablation); random selection hits the high-overlap quartile only ~25% of the time vs active's 50%.",
   "notes": "CATE ensemble uses sklearn MLP (Deep-Ensembles style) for v_u; the paper cites MC-Dropout as the computationally cheaper alternative -- both estimate the same epistemic variance. Continuous-covariate industrial-style DGP.",
-  "runtime_s": 41.5,
+  "runtime_s": 11.7,
   "config": {
     "seed": 0,
     "claim1_B": 480
-  }
+  },
+  "run_id": "c7cd5e5b-cc0e-4f03-be60-8e43effc2ac3",
+  "compute": "Hugging Face cpu-upgrade (CPU-only)"
 }
