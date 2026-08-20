@@ -1,5 +1,30 @@
 # Budgeted Active Experimentation for Treatment Effect Estimation — reproduction
 
+## Collection classification and audit boundary
+
+This repository is a **legacy/source workspace** for *Budgeted Active Experimentation for Treatment Effect Estimation from Observational and Randomized Data*
+(arXiv `2602.22021`, OpenReview `Np7Y3AEVNq`). It is preserved
+separately from the standardized canonical record at
+[`icml26-budgeted-active-experimentation`](https://github.com/MachineLearning-Nerd/icml26-budgeted-active-experimentation).
+
+The claim results and scores recorded below are historical results of this
+workspace. They are not new paper-level verifications performed while
+organizing the collection. The collection audit did not run the scientific
+implementation; the canonical record documents its own scoped status and
+limitations.
+
+### How the historical claim evidence is produced
+
+The claim table and experiment log below are the authoritative mapping from
+each paper claim to its producer, command, control, and evidence artifact. In
+this workspace, `repro/algorithm1.py`, `repro/estimators.py`, `repro/verify_claims.py`, and `repro/run_all.py` produce the claim checks and write JSON/CSV evidence under `reports/budgeted-active-expe/data/`, which feeds the report.
+
+The former `orx/*` branches are historical workstreams, not additional final
+publication claims. Their purposes and tips are preserved in
+[`BRANCH_AUDIT.md`](BRANCH_AUDIT.md). Citation and author acknowledgment
+details are in [`CITATION.cff`](CITATION.cff) and
+[`AUTHOR_THANK_YOU.md`](AUTHOR_THANK_YOU.md).
+
 Clean-room, claim-by-claim reproduction of **Gao et al., *Budgeted Active Experimentation for
 Treatment Effect Estimation from Observational and Randomized Data*** (arXiv
 [2602.22021](https://arxiv.org/abs/2602.22021), OpenReview `Np7Y3AEVNq`).

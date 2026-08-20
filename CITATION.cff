@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Legacy/source workspace for Budgeted Active Experimentation for Treatment Effect Estimation from Observational and Randomized Data"
+type: software
+authors:
+  - family-names: Gao
+    given-names: Jiacan
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-legacy-budgeted-active-experimentation"
+url: "https://github.com/MachineLearning-Nerd/icml26-legacy-budgeted-active-experimentation"
+abstract: "Legacy/source workspace preserving the implementation, evidence artifacts, and branch history for the associated ICML 2026 reproduction record."
+keywords:
+  - reproduction
+  - ICML 2026
+references:
+  - type: article
+    title: "Budgeted Active Experimentation for Treatment Effect Estimation from Observational and Randomized Data"
+    authors:
+      - family-names: Gao
+        given-names: Jiacan
+    identifiers:
+      - type: arxiv
+        value: "2602.22021"
+    url: "https://arxiv.org/abs/2602.22021"
+
