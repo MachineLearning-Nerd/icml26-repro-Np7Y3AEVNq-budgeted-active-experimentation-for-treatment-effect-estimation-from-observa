@@ -25,6 +25,10 @@ publication claims. Their purposes and tips are preserved in
 details are in [`CITATION.cff`](CITATION.cff) and
 [`AUTHOR_THANK_YOU.md`](AUTHOR_THANK_YOU.md).
 
+## Thank you
+
+Thank you to the paper authors for making this research available for study. The full acknowledgment is in [`AUTHOR_THANK_YOU.md`](AUTHOR_THANK_YOU.md).
+
 Clean-room, claim-by-claim reproduction of **Gao et al., *Budgeted Active Experimentation for
 Treatment Effect Estimation from Observational and Randomized Data*** (arXiv
 [2602.22021](https://arxiv.org/abs/2602.22021), OpenReview `Np7Y3AEVNq`).
